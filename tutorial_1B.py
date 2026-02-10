@@ -252,7 +252,7 @@ x_reshaped = x.view(-1, 1)
 y_reshaped = y.view(-1, 1)
 
 linear_loss = []
-for epoch in range(1000):
+for epoch in range(100):
 
     # Forward pass
     y_pred = linear_model(x_reshaped)
@@ -302,7 +302,7 @@ x_reshaped = x.view(-1, 1)
 y_reshaped = y.view(-1, 1)
 
 extend_loss = []
-for epoch in range(1000):
+for epoch in range(100):
 
     # Forward pass
     y_pred = extended_model(x_reshaped)
@@ -358,7 +358,7 @@ x_reshaped = x.view(-1, 1)
 y_reshaped = y.view(-1, 1)
 
 tanh_loss = []
-for epoch in range(1000):
+for epoch in range(100):
     
     # Forward pass
     y_pred = tanh_model(x_reshaped)
@@ -399,7 +399,7 @@ two_hidden_model = TwoHiddenLayersModel()
 x_reshaped = x.view(-1, 1)
 y_reshaped = y.view(-1, 1)
 two_hidden_loss = []
-for epoch in range(1000):
+for epoch in range(100):
     
     # Forward pass
     y_pred = two_hidden_model(x_reshaped)
